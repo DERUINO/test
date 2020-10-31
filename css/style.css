@@ -21,6 +21,18 @@
 	width: 100%;
 	height: 100vh;
 	display: flex;
+	background: #e3e3e3;
+	animation: bg 10s infinite ease-in-out;
+}
+
+@keyframes bg {
+	0% {
+		color: #3e3e3e;
+		background: #e3e3e3;
+	} 50% {
+		color: #e3e3e3;
+		background: #3e3e3e;
+	}
 }
 
 .block {
