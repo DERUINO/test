@@ -16,3 +16,14 @@
 .myborder {
 	border: 1px solid red;
 }
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+
+.block {
+	font-size: calc(1rem + 1.4vw);
+	margin: auto;
+}
