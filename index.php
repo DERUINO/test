@@ -17,23 +17,20 @@
 
   <body>
 
-  	<div class="wrapper">
-  		<div class="nav-top"></div>
-	    <div class="nav-bottom"></div>
-	    <div class="window">
-	    	<ul class="list">
-	    		
-	    	</ul>
-	    	<ul class="list">
-	    		<li><img src="css/images/dota1.png"></li>
-	    		<li><img src="css/images/dota2.png"></li>
-	    		<li><img src="css/images/dota3.png"></li>
-	    		<li><img src="css/images/dota4.png"></li>
-	    		<li><img src="css/images/dota5.png"></li>
-	    	</ul>
+  	<div id="viewport">
+        <div class="slider" style="left: 0">
+            <div class="slide"><img src="css/images/img1.jpg" alt=""></div>
+            <div class="slide"><img src="css/images/img2.jpg" alt=""></div>
+            <div class="slide"><img src="css/images/img3.jpg" alt=""></div>
+        </div>
+        <button class="prev">Назад</button>
+    	<button class="next">Вперёд</button>
+    	<div id="viewSlider">
+        	<div class="viewSlide"></div>
+	        <div class="viewSlide"></div>
+	        <div class="viewSlide"></div>
 	    </div>
-	</div>
-	<div class="button">Старт</div>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
   </body>
