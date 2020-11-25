@@ -37,7 +37,21 @@
             } else {
                 viewSlide = 0;
             }
-            slider.animate({'left': -viewSlide * viewport + "px"}, {'duration': 1000});
+
+            slider.queue(function (SlideHide) {
+                slider.fadeOut(700);
+                SlideHide();
+            });
+            slider.queue(function (SlideLeft) {
+                slider.css({
+                    left: -viewSlide * viewport + "px"
+                });
+                SlideLeft();
+            });
+            slider.queue(function (SlideShow) {
+                slider.fadeIn(700);
+                SlideShow();
+            });
     }
 
     function PrevSlide () {
@@ -46,7 +60,21 @@
             } else {
                 viewSlide = countSlide-1;
             }
-            slider.animate({'left': -viewSlide * viewport + "px"}, {'duration': 1000});
+            
+            slider.queue(function (SlideHide) {
+                slider.fadeOut(700);
+                SlideHide();
+            });
+            slider.queue(function (SlideLeft) {
+                slider.css({
+                    left: -viewSlide * viewport + "px"
+                });
+                SlideLeft();
+            });
+            slider.queue(function (SlideShow) {
+                slider.fadeIn(700);
+                SlideShow();
+            });
     }
 
 });
