@@ -4,23 +4,13 @@ $(document).ready(function () {
 
 function cursor () {
   $(window).mousemove(function (pos) { 
-    $(".point").css({
+    $(".point,.curcle").css({
       'left': (pos.pageX)+'px',
-      'top': (pos.pageY)+'px',
-      'opacity': '1'
+      'top': (pos.pageY)+'px'
     }); 
   });
 
-  $(window).mousemove(function (pos) { 
-    $(".cursor").css({
-      'left': (pos.pageX)+'px',
-      'top': (pos.pageY)+'px',
-      'transition': '0.1s',
-      'opacity': '1'
-    });
-  });
-
   $('.link').hover(function () {
-    $('.cursor,.point').toggleClass('hover');
+    $('.curcle,.point').toggleClass('hover');
   });
 }
