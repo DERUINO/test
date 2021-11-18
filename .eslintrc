@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "one-var": ["error", {
+        "initialized": "never",
+        "uninitialized": "always"
+    }],
+    "no-var": 2,
+    "comma-dangle": ["error", {
+        "arrays": "always-multiline",
+        "objects": "always-multiline"
+    }],
+    "semi": [2, "always"],
+    "consistent-return": 2,
+    "indent"           : [1, 4],
+    "no-else-return"   : 1,
+    "space-unary-ops"  : 2
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ]
+}
